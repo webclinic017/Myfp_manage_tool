@@ -35,6 +35,8 @@ class KingFund:
         if output:
             output = pd.DataFrame(output, columns=['基金名称', '备案编号', 'fund_code'])
             output.set_index('基金名称', inplace=True)
+            # 金方数据库乱码问题，解决日期20220510
+            output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
         else:
             print(f'没查询到对应标的，查询标的名称：{fund_name}')
 
@@ -51,6 +53,8 @@ class KingFund:
         if output:
             output = pd.DataFrame(output, columns=['基金名称', '备案编号', 'fund_code'])
             output.set_index('基金名称', inplace=True)
+            # 金方数据库乱码问题，解决日期20220510
+            output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
         else:
             print(f'没查询到对应标的，查询标的备案编号：{regnum}')
 
