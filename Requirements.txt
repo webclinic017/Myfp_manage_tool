@@ -1,0 +1,6 @@
+streamlit==1.9.0
+pillow==9.1.0
+pandas==1.4.2
+pymssql==2.2.3
+tushare==1.2.85
+numpy==1.21.5

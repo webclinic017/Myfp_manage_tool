@@ -39,6 +39,8 @@ class KingFund:
             output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
         else:
             print(f'没查询到对应标的，查询标的名称：{fund_name}')
+            output = pd.DataFrame({'基金名称': [fund_name], '备案编号': '无结果', 'fund_code': '无结果'})
+            output.set_index('基金名称', inplace=True)
 
         return output
 
@@ -57,6 +59,8 @@ class KingFund:
             output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
         else:
             print(f'没查询到对应标的，查询标的备案编号：{regnum}')
+            output = pd.DataFrame({'基金名称': '无结果', '备案编号': regnum, 'fund_code': '无结果'})
+            output.set_index('基金名称', inplace=True)
 
         return output
 
@@ -75,6 +79,9 @@ class KingFund:
                                                f'{fund_name}复权净值'])
                 output.set_index('date', drop=True, inplace=True)
                 output.sort_index(ascending=True, inplace=True)
+
+                # 更改output数据类型
+                output = output.astype('float')
             else:
                 print(f'没查询到对应标的，查询标的代码：{fund_name}: {fund_code}')
             return output
@@ -92,6 +99,9 @@ class KingFund:
                                                f'{fund_name}复权净值'])
                 output.set_index('date', drop=True, inplace=True)
                 output.sort_index(ascending=True, inplace=True)
+
+                # 更改output数据类型
+                output = output.astype('float')
             else:
                 print(f'没查询到对应标的，查询标的代码：{fund_name}: {fund_code}')
             return output
