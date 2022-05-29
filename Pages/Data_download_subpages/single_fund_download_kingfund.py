@@ -18,14 +18,22 @@ def sidebar():
 
 
 def body():
-    # 实例化kingfund模块
-    kf = KingFund.KingFund()
+
+    # 判断是否在公司内网，尝试链接金方数据库
+    try:
+        kf = KingFund.KingFund()  # 实例化kingfund模块
+    except:
+        kf = None
+        st.warning('无法连接至金方数据库，请在公司内网重试！')
 
     # 获取单一标的
 
     def get_fund_data():
 
-        download_fund_name = st.text_input('请输入基金名称')
+        if kf:
+            download_fund_name = st.text_input('请输入基金名称')
+        else:
+            download_fund_name = None
 
         # 获取fund_code
         def get_fund_code():
@@ -39,11 +47,13 @@ def body():
                 fund_codes.append(fund_code_all.loc[fund_name, 'fund_code'])
 
             return fund_names, fund_codes, fund_code_all
+            # return fund_code_all
 
         # 判断输入是否为空
         if download_fund_name:
             try:
                 selected_fund_names, selected_fund_codes, fund_code_table = get_fund_code()
+                # fund_code_table = get_fund_code()
                 st.table(fund_code_table)
 
                 col_1, col_2 = st.columns(2)
@@ -119,4 +129,3 @@ def app():
     sidebar()
     body()
 
-# %%

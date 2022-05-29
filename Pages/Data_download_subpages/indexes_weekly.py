@@ -76,9 +76,13 @@ def body():
                     """)
         # stock_index_value = pd.read_csv('Apps/weekly_report/Data/stock_index_update.csv', index_col=0)
         # commodity_index_value = pd.read_csv('Apps/weekly_report/Data/commodity_index_update.csv', index_col=0)
-        this_week = st.selectbox('本周日期', options=stock_index_update.index, index=stock_index_update.shape[0]-1)
-        last_week = st.selectbox('上周日期', options=stock_index_update.index, index=stock_index_update.shape[0]-6)
-        week_before = st.selectbox('两周前日期', options=stock_index_update.index, index=stock_index_update.shape[0]-11)
+        st.sidebar.subheader('股票指数日期设置')
+        this_week = st.sidebar.selectbox('本周日期', options=stock_index_update.index,
+                                         index=stock_index_update.shape[0] - 1)
+        last_week = st.sidebar.selectbox('上周日期', options=stock_index_update.index,
+                                         index=stock_index_update.shape[0] - 6)
+        week_before = st.sidebar.selectbox('两周前日期', options=stock_index_update.index,
+                                           index=stock_index_update.shape[0] - 11)
 
         st.write('股票指数')
         this_week_return = stock_index_update.loc[this_week, :] / stock_index_update.loc[last_week, :] - 1
@@ -90,10 +94,25 @@ def body():
         st.write('___')
         st.write(stock_index_update.tail(10))
 
+        # 商品指数
         st.write('商品指数')
-        this_week_return = commodity_index_update.iloc[-1, :] / commodity_index_update.iloc[-6, :] - 1
-        last_week_return = commodity_index_update.iloc[-6, :] / commodity_index_update.iloc[-11, :] - 1
-        data = pd.concat([this_week_return, last_week_return], axis=1)
+
+        st.sidebar.subheader('商品指数日期设置')
+        c_this_week = st.sidebar.selectbox('本周日期',
+                                           options=commodity_index_update.index,
+                                           index=commodity_index_update.shape[0] - 1)
+        c_last_week = st.sidebar.selectbox('上周日期',
+                                           options=commodity_index_update.index,
+                                           index=commodity_index_update.shape[0] - 6)
+        c_week_before = st.sidebar.selectbox('两周前日期',
+                                             options=commodity_index_update.index,
+                                             index=commodity_index_update.shape[0] - 11)
+
+        c_this_week_return = commodity_index_update.loc[c_this_week, :] / commodity_index_update.loc[c_last_week,
+                                                                          :] - 1
+        c_last_week_return = commodity_index_update.loc[c_last_week, :] / commodity_index_update.loc[c_week_before,
+                                                                          :] - 1
+        data = pd.concat([c_this_week_return, c_last_week_return], axis=1)
         data.columns = ['本周涨跌幅(%)', '上周涨跌幅(%)']
         st.table(data * 100)
 

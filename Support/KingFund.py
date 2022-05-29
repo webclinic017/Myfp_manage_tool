@@ -8,12 +8,13 @@ Update: 28 March 2022, combine multiple equity method
 import sys
 import pandas as pd
 import pymssql
+import platform
 
 
 class KingFund:
 
     def __init__(self):
-        connect = pymssql.connect('10.20.34.122', 'su', 'ysmz,.123', 'KingFund_DB_New')  # Define connection
+        connect = pymssql.connect('10.20.34.122', 'su', 'ysmz,.123', 'KingFund_DB_New', login_timeout=5)  # Define connection
 
         # connection result
         if connect:  # print out connection result
@@ -36,7 +37,8 @@ class KingFund:
             output = pd.DataFrame(output, columns=['基金名称', '备案编号', 'fund_code'])
             output.set_index('基金名称', inplace=True)
             # 金方数据库乱码问题，解决日期20220510
-            output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
+            if platform.system().lower() == 'windows':
+                output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
         else:
             print(f'没查询到对应标的，查询标的名称：{fund_name}')
             output = pd.DataFrame({'基金名称': [fund_name], '备案编号': '无结果', 'fund_code': '无结果'})
@@ -56,7 +58,8 @@ class KingFund:
             output = pd.DataFrame(output, columns=['基金名称', '备案编号', 'fund_code'])
             output.set_index('基金名称', inplace=True)
             # 金方数据库乱码问题，解决日期20220510
-            output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
+            if platform.system().lower() == 'windows':
+                output.index = [_.encode('latin1').decode('gbk') for _ in output.index]
         else:
             print(f'没查询到对应标的，查询标的备案编号：{regnum}')
             output = pd.DataFrame({'基金名称': '无结果', '备案编号': regnum, 'fund_code': '无结果'})

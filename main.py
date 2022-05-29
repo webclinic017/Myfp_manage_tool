@@ -7,7 +7,7 @@ from PIL import Image
 import streamlit as st
 
 from Support.Multipage import MultiPage
-from Pages import home, data_update, pool_manage, product_manage, fund_evaluation
+from Pages import home, data_update, pool_manage, product_manage, fund_evaluation, portfolio
 
 
 def header():
@@ -36,6 +36,7 @@ def body():
     app.add_app("投资池管理", pool_manage.app)
     app.add_app("产品管理", product_manage.app)
     app.add_app("基金评价", fund_evaluation.app)
+    app.add_app("组合模拟", portfolio.app)
 
     # The main app
     app.run()
