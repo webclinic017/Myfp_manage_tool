@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="849ec2eb-522c-4c92-ba3b-220b694190d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Fund_evaluation_subpages/CAPM.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Fund_evaluation_subpages/basic_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/Pool_manage_subpages/quant_evaluation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CAPM.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/drifts.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test_fund.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/.idea/yz_finance.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/calculation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/calculation/basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/calculation/data_clean.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/calculation/ratios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/calculation/regression.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/data_get/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/data_objective/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/factor/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/factor/mac_beth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/annualreturn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/calmar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/drawdown.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/leverage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/logreturnsrolling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/periodstats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/positions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/pyfolio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/returns.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/sharpe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/sqn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/timereturn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/tradeanalyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/transactions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/analyzers/vwr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/broker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/brokers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/brokers/bbroker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/comminfo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/commissions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/core.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/dataseries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/errors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feeds/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feeds/btcsv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feeds/chainer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feeds/csvgeneric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feeds/pandafeed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/feeds/rollover.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/fillers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/bsplitter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/calendardays.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/datafiller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/datafilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/daysteps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/heikinashi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/renko.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/filters/session.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/flt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/accdecoscillator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/aroon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/atr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/awesomeoscillator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/basicops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/crossover.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/dema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/deviation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/directionalmove.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/dma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/dpo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/dv2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/ema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/envelope.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/hadelta.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/heikinashi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/hma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/hurst.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/ichimoku.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/kama.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/kst.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/lrsi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/mabase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/macd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/momentum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/ols.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/oscillator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/percentchange.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/percentrank.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/pivotpoint.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/prettygoodoscillator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/priceoscillator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/psar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/rmi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/rsi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/sma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/smma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/stochastic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/trix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/tsi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/ultimateoscillator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/vortex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/williams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/wma.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/zlema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/indicators/zlind.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/linebuffer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/lineiterator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/lineroot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/lineseries.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/mathsupport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/metabase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/benchmark.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/broker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/buysell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/drawdown.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/logreturns.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/timereturn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/observers/trades.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/finance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/formatters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/locator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/multicursor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/plot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/scheme.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/plot/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/position.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/resamplerfilter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/signal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/signals/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/sizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/sizers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/sizers/fixedsize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/sizers/percents_sizer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/store.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/strategies/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/strategies/sma_crossover.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/talib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/timer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/trade.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/tradingcal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/autodict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/dateintern.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/flushfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/ordereddefaultdict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/utils/py3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/hyz_backtest/writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/tests/factor_testing.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/utility/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yz_finance/utility/streamlit_template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Myfp_manage_tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Myfp_manage_tool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Funds Data/fund_code_list.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Funds Data/fund_code_list.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Funds Data/pool_manage.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/data/Funds Data/pool_manage.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Funds list/pool.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/Funds list/pool.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/SAMCO sign.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/SAMCO sign.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Data_download_subpages/indexes_weekly.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Data_download_subpages/indexes_weekly.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Data_download_subpages/single_fund_download_kingfund.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Data_download_subpages/single_fund_download_kingfund.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Data_download_subpages/update.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Data_download_subpages/update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Pool_manage_subpages/pool_general_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Pool_manage_subpages/pool_general_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Pool_manage_subpages/pool_perfomance.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Pool_manage_subpages/pool_perfomance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Portfolio_subpages/portfolio_stimulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Portfolio_subpages/portfolio_stimulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/data_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/02_data_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/fund_evaluation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/05_fund_evaluation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/pool_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/04_pool_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/portfolio.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/06_portfolio_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/product_manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/03_product_manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Support/FinancialRatios.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Support/Fund_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/yz_finance/data_objective/fund_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Support/KingFund.py" beforeDir="false" afterPath="$PROJECT_DIR$/yz_finance/data_get/kingfund.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Support/Matplot_CH_Font.py" beforeDir="false" afterPath="$PROJECT_DIR$/yz_finance/utility/matplotlib_ch_font.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Support/Multipage.py" beforeDir="false" afterPath="$PROJECT_DIR$/yz_finance/utility/multi_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Support/TusharePro.py" beforeDir="false" afterPath="$PROJECT_DIR$/yz_finance/data_get/tushare_pro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ChvBVoL1WgSkeHMmnRrONVXelR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/yanzhonghuang/Documents/Personal/Python/hyz_package/data_get",
+    "settings.editor.selected.configurable": "fileTemplates"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../hyz_package/data_get" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../hyz_package/tests/test_data" />
+      <recent name="$PROJECT_DIR$/../yz_finance/tests" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test for calculation">
+    <configuration name="run_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Myfp_manage_tool" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test for calculation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hyz_package" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hyz_package/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../hyz_package/tests/test for calculation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test for data_get" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hyz_package" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hyz_package/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../hyz_package/tests/test for data_get.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test for calculation" />
+        <item itemvalue="Python.test for data_get" />
+        <item itemvalue="Python.run_main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

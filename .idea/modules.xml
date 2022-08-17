@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Myfp_manage_tool.iml" filepath="$PROJECT_DIR$/.idea/Myfp_manage_tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hyz_package/.idea/hyz_package.iml" filepath="$PROJECT_DIR$/../hyz_package/.idea/hyz_package.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../yz_finance/.idea/yz_finance.iml" filepath="$PROJECT_DIR$/../yz_finance/.idea/yz_finance.iml" />
     </modules>
   </component>
 </project>
